@@ -1,0 +1,210 @@
+/* Variables CSS */
+:root {
+  --color-primario: #181823;
+  --color-secundario: #537fe7;
+  --color-terciario: #c0eef2;
+  --color-fondo: #e9f8f9;
+  --color-blanco: #ffffff;
+  --fuente-titulo: 'Anton', sans-serif;
+  --fuente-texto: 'Space Grotesk', sans-serif;
+  --fuente-parrafo: 'Arial' , sans-serif;
+}
+
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-parrafo);
+}
+
+/* Encabezado */
+header {
+  background-color: var(--color-fondo);
+  color: var(--color-primario);
+  display: flex;
+  flex-direction: column; /* Agregamos un flex-direction para apilar los elementos */
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem; /* Agregamos un padding-top para separar el nav del h1 */
+}
+
+header h1 {
+  font-family: var(--fuente-titulo);
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 1rem; 
+  margin-top: 2rem;/* Agregamos un margin-bottom para separar el h1 del h3 */
+}
+header h3 {
+  font-family: var(--fuente-texto);
+  font-size: 2.5rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #777;
+  margin-bottom: 2rem; /* Agregamos un margin-bottom para separar el h3 del nav */
+}
+
+/* NAVEGACION */
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: var(--color-fondo);
+  color: var(--color-primario);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-family: inherit;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  color: inherit;
+  font-family: var(--fuente-texto);
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 0.25rem;
+}
+
+nav a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Navegación MQ */
+@media only screen and (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav a {
+    font-size: 1rem;
+  }
+}
+
+
+/* Foto de perfil Imagen */
+
+.fotoperfil {
+border-radius: 2rem;
+}
+
+
+/* Sección Quién Soy */
+#quien-soy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: var(--color-fondo);
+  color: var(--color-primario);
+  font-size: 2rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+#quien-soy p {
+  font-family: var(--fuente-parrafo);
+  font-size: 1.1rem;
+}
+
+/* Galería */
+#galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.galeria-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/*CONTACTO*/
+#contacto {
+  background-color: #f7f7f7;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+#contacto h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#quien-soy p {
+  font-family: var(--fuente-parrafo);
+  font-size: 1.1rem;
+}
+
+/* Galería */
+#galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.galeria-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/*CONTACTO*/
+
+
+
+
+
+/* Footer */
+footer {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+
+
+
